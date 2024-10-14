@@ -25,34 +25,34 @@ export const clientReviews = [
   {
     id: 1,
     name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
+    position: "Software Engineer",
     img: "assets/review1.png",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Zafar on various front-end projects, I've seen firsthand their deep understanding of React and their ability to solve complex technical challenges. They consistently deliver high-quality code, implement efficient solutions, and are always ready to tackle difficult tasks.",
   },
   {
     id: 2,
     name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
+    position: " Project Manager",
     img: "assets/review2.png",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Zafar has been an excellent team player throughout our projects. Their ability to communicate technical details clearly and collaborate across teams made our workflow much smoother. They often went the extra mile to ensure that everyone was aligned with the project goals.",
   },
   {
     id: 3,
     name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
+    position: "UI/UX Designer",
     img: "assets/review3.png",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I've had the pleasure of working with Zafar on several design-heavy projects. Their attention to detail and creativity when building responsive, user-friendly interfaces really stood out. The results were always polished and exceeded expectations.",
   },
   {
     id: 4,
     name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
+    position: "Lead Developer",
     img: "assets/review4.png",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+      "A highly motivated developer with a great passion for learning. Always eager to contribute fresh ideas and take on new challenges, making him a valuable asset to any team.",
   },
 ];
 
@@ -250,6 +250,8 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+    myDeskScale: isSmall ? 2 : isMobile ? 1.8 : 1.6,
+    myDeskPosition: isMobile ? [-4.2, 4.0, 4] : [-3.9, 2.8, 6.5],
     cubePosition: isSmall
       ? [4, -5, 0]
       : isMobile
@@ -284,31 +286,31 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Limsa",
+    pos: "Frontend Developer",
+    duration: "2024 (August) - Present",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "Developed responsive projects (Tropik Academy, Building Company, Avtozoom, etc.) with real APIs, localization, animations, and Ant Design, focusing on user experience and scalability.",
+    icon: "/assets/react.svg",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "Mobile Solution",
+    pos: "Frontend Developer",
+    duration: "2024 (April - August)",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "Worked on projects (Weather App, To Do List) using React, Firebase, and custom CSS, contributing to real-world apps like GUI and IQ KPI.",
+    icon: "/assets/react.svg",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "EduOn",
+    pos: "Project Manager",
+    duration: "2023 (June - August)",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+      "Led website enhancement projects, managed tasks in Notion and Trello, improving user experience and workflows for an online course platform.",
     icon: "/assets/notion.svg",
     animation: "salute",
   },

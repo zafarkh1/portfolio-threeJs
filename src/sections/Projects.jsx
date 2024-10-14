@@ -26,7 +26,7 @@ function Projects(props) {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="work">
       <p className="head-text">My Work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 w-full mt-12">

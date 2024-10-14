@@ -3,7 +3,7 @@ import { clientReviews } from "../constants";
 function Clients(props) {
   return (
     <section className="c-space my-20">
-      <h3 className="head-text">Hear from my clients</h3>
+      <h3 className="head-text">Team Feedback</h3>
 
       <div className="client-container">
         {clientReviews.map(({ id, name, position, img, review }) => (
@@ -29,6 +29,7 @@ function Clients(props) {
                 <div className="flex self-end items-center gap-2">
                   {Array.from({ length: 5 }, (_, i) => (
                     <img
+                      key={i}
                       src={"/assets/star.png"}
                       alt="star"
                       className="w-5 h-5"

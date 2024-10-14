@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
 // import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
 import HackerRoom from "../components/HackerRoom";
@@ -12,6 +12,8 @@ import Cube from "../components/Cube";
 import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 import Rings from "../components/Ring";
+import DevRoom from "../components/DevRoom";
+import { Leva, useControls } from "leva";
 
 function Showcase() {
   // const controls = useControls("HackerRoom", {
@@ -76,13 +78,19 @@ function Showcase() {
           {/* <Leva /> */}
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
-              <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+              <PerspectiveCamera makeDefault position={[0, 0, 60]} />
               <HeroCamera isMobile={isMobile}>
-                <HackerRoom
+                {/* <HackerRoom
                   rotation={[0, -Math.PI, 0]}
                   scale={sizes.deskScale}
                   position={sizes.deskPosition}
+                /> */}
+                <DevRoom
+                  rotation={[0, -Math.PI, 0]}
+                  scale={sizes.myDeskScale}
+                  position={sizes.myDeskPosition}
                 />
+                <directionalLight position={[10, 10, 10]} intensity={5} />
               </HeroCamera>
 
               {/*    floating items */}
