@@ -1,9 +1,8 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 // import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
-import HackerRoom from "../components/HackerRoom";
 import CanvasLoader from "../components/CanvasLoader";
 import { calculateSizes } from "../constants";
 import Target from "../components/Target";
@@ -13,7 +12,6 @@ import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 import Rings from "../components/Ring";
 import DevRoom from "../components/DevRoom";
-import { Leva, useControls } from "leva";
 
 function Showcase() {
   // const controls = useControls("HackerRoom", {

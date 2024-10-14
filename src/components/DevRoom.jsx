@@ -6,13 +6,13 @@ Source: https://sketchfab.com/3d-models/my-computer-9d1da5ba105145f7910ff50774c1
 Title: My computer
 */
 
-import { useGLTF, useTexture } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 
 const DevRoom = (props) => {
   const { nodes, materials } = useGLTF("/models/dev_room.glb");
 
-  const monitortxt = useTexture("textures/desk/monitor.png");
-  const screenTxt = useTexture("textures/desk/screen.png");
+  // const monitortxt = useTexture("textures/desk/monitor.png");
+  // const screenTxt = useTexture("textures/desk/screen.png");
 
   return (
     <group {...props} dispose={null}>
